@@ -1,0 +1,9 @@
+a.active {
+  font-size: 2xl;
+  color: #23be0a;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid rgb(35, 190, 10);
+  padding: 6px 12px;
+  font-weight: bold;
+}
