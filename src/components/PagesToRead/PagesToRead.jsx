@@ -9,6 +9,7 @@ import {
   LabelList,
 } from "recharts";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const CustomTooltip = ({ active, payload }) => {
   if (active && payload && payload.length) {
@@ -51,6 +52,9 @@ const PagesToRead = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Pages To Read | Boi Poka</title>
+      </Helmet>
       <h1 className="text-4xl my-5 font-extrabold text-center bg-gradient-to-r from-green-300 to-gray-700 bg-clip-text text-transparent">
         Pages To Read: {booksData.length}
       </h1>

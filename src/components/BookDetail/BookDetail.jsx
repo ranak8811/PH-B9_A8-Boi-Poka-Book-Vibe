@@ -4,6 +4,7 @@ import {
   addToStoredReadList,
   addToStoredWishList,
 } from "../../utility/addToDB";
+import { Helmet } from "react-helmet-async";
 
 const BookDetail = () => {
   const { bookId } = useParams();
@@ -52,6 +53,9 @@ const BookDetail = () => {
 
   return (
     <div className="flex flex-col lg:flex-row gap-10">
+      <Helmet>
+        <title>Book Detail | {bookName}</title>
+      </Helmet>
       <div className="bg-[rgba(19,19,19,0.05)] p-12 rounded-2xl flex-1 flex justify-center items-center">
         <img className="w-[400px]" src={image} alt="" />
       </div>

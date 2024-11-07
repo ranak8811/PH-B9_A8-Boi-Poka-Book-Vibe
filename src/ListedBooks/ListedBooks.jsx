@@ -11,6 +11,7 @@ import {
 } from "../utility/addToDB";
 import Book from "../components/Book/Book";
 import WishBookList from "../components/WishBookList/WishBookList";
+import { Helmet } from "react-helmet-async";
 
 const ListedBooks = () => {
   const [readList, setReadList] = useState([]);
@@ -59,6 +60,9 @@ const ListedBooks = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Listed Books | Boi Poka</title>
+      </Helmet>
       <h3 className="text-3xl my-8 font-extrabold text-center bg-gradient-to-r from-green-300 to-red-700 bg-clip-text text-transparent">
         Listed Books
       </h3>
